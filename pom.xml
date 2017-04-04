@@ -21,7 +21,7 @@
 					<target>${jdk.level}</target>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!--plugin>
     				<groupId>org.codehaus.mojo</groupId>
     				<artifactId>exec-maven-plugin</artifactId>
     				<configuration>
@@ -29,7 +29,7 @@
                                         <target>${jdk.level}</target>
       					<mainClass>PopUps</mainClass>
     				</configuration>
-   			</plugin>
+   			</plugin-->
 		</plugins>
 	</build>
 	<!-- Include the following dependencies -->
