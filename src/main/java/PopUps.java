@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class PopUps {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "chromedriver");
+		System.setProperty("webdriver.chrome.driver", "C:\chromedriver.exe
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://www.globalrph.com/davescripts/popup.htm");
 
