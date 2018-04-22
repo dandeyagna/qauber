@@ -2,12 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-
 //class for the Entities page
 public class EntitiesPage {
-	//constructor to initialize attributes
-	public EntitiesPage(String addEntityXpath, String firstEntityXpath, String assPermissionsXpath, String editEntityXpath, String deleteEntityXpath) {
-	}
 	
 	//method for clicking the add entity button
 	public void clickAddEntity(WebDriver driver, String addEntityXpath, String afterAddEntityUrl) throws InterruptedException{

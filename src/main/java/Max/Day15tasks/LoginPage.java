@@ -4,9 +4,6 @@ import org.openqa.selenium.WebElement;
 
 //class for Login page
 public class LoginPage {
-	//constructor to initialize attributes
-	public LoginPage(String url, String email, String emailFieldXpath, String password, String passwordFieldXpath, String loginButtonXpath, String forgotPassXpath, String registerNowXpath) {
-	}
 	
 	//methods for actual behavior	
 	public void register(WebDriver driver, String registerNowXpath, String registerPageUrl) throws InterruptedException {
@@ -60,8 +57,5 @@ public class LoginPage {
         	System.out.println("FAIL");
         }    
 	}
-		
-
-
-	
+			
 }

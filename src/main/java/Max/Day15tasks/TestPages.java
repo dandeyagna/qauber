@@ -36,7 +36,7 @@ public class TestPages {
 	    driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 
 		//Creating Dynamic object for Login Page
-		LoginPage lPage = new LoginPage(url, email, emailFieldXpath, password, passwordFieldXpath, loginButtonXpath, forgotPassXpath, registerNowXpath); 
+		LoginPage lPage = new LoginPage(); 
 		
 		//Go to the url
 	    driver.get(url);
@@ -57,7 +57,7 @@ public class TestPages {
 		lPage.submitLogin(driver, loginButtonXpath, homePageUrl);
 	
 		//Creating Dynamic object for Entities Page
-		EntitiesPage ePage = new EntitiesPage(addEntityXpath, firstEntityXpath, assPermissionsXpath, editEntityXpath, deleteEntityXpath);
+		EntitiesPage ePage = new EntitiesPage();
 		driver.get(entitiesUrl);
 		ePage.clickAddEntity(driver, addEntityXpath, afterAddEntityUrl);
 		
@@ -77,7 +77,7 @@ public class TestPages {
 		//driver.get(entitiesUrl);
 		//ePage.deleteEntity(driver, deleteEntityXpath, deleteCancelXpath);
 		
-		System.out.println("---END OF TESTS---");
+		System.out.println("-----END OF TESTS-----");
 	}
 
 }
