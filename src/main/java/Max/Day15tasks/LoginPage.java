@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 public class LoginPage {
 	
 	//methods for actual behavior	
-	public void register(WebDriver driver, String registerNowXpath, String registerPageUrl) throws InterruptedException {
+	public static void register(WebDriver driver, String registerNowXpath, String registerPageUrl) throws InterruptedException {
 		//click on Register Now button
 		Thread.sleep(3000);                                                                               
 		WebElement registerNow = driver.findElement(By.xpath(registerNowXpath));
@@ -19,7 +19,7 @@ public class LoginPage {
         }		
 	}
 	
-	public void forgotPassString (WebDriver driver, String forgotPassXpath, String forgotPassUrl) throws InterruptedException {
+	public static void forgotPassString (WebDriver driver, String forgotPassXpath, String forgotPassUrl) throws InterruptedException {
 		//click on forgot your password link
 		Thread.sleep(3000);
 		WebElement forgotPass = driver.findElement(By.xpath(forgotPassXpath));
@@ -32,19 +32,19 @@ public class LoginPage {
         }    
 	}
 	
-	public void enterEmail(WebDriver driver, String email, String emailFieldXpath) {
+	public static void enterEmail(WebDriver driver, String email, String emailFieldXpath) {
 		//enter email
 		WebElement emailField = driver.findElement(By.xpath(emailFieldXpath));
         emailField.sendKeys(email);
 	}
 	
-	public void enterPassword(WebDriver driver, String password, String passwordFieldXpath) {
+	public static void enterPassword(WebDriver driver, String password, String passwordFieldXpath) {
 		//enter password
 		WebElement passwordField = driver.findElement(By.xpath(passwordFieldXpath));
         passwordField.sendKeys(password);
 	}
 	
-	public void submitLogin(WebDriver driver, String loginButtonXpath, String homePageUrl) throws InterruptedException {
+	public static void submitLogin(WebDriver driver, String loginButtonXpath, String homePageUrl) throws InterruptedException {
 		//click submit button
 		Thread.sleep(3000);
 		WebElement loginButton = driver.findElement(By.xpath(loginButtonXpath));

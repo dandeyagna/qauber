@@ -35,47 +35,47 @@ public class TestPages {
 	    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	    driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 
-		//Creating Dynamic object for Login Page
-		LoginPage lPage = new LoginPage(); 
+		//Commented out Creating Dynamic object for Login Page due to making methods Static (no need for object)
+		//LoginPage lPage = new LoginPage(); 
 		
 		//Go to the url
 	    driver.get(url);
 	    //Activate the register() test case method in LoginPage
-		lPage.register(driver, registerNowXpath, registerPageUrl);
+		LoginPage.register(driver, registerNowXpath, registerPageUrl);
 		
 		//Go to the url
 	    driver.get(url);
 	    //Activate the forgotPassString() test case method in LoginPage
-		lPage.forgotPassString(driver, forgotPassXpath, forgotPassUrl);
+	    LoginPage.forgotPassString(driver, forgotPassXpath, forgotPassUrl);
 		
 		//Go to the url
 	    driver.get(url);
 	    
 	    //enterEmail(), enterPassword(), and submitLogin()
-		lPage.enterEmail(driver, email, emailFieldXpath);
-		lPage.enterPassword(driver, password, passwordFieldXpath);
-		lPage.submitLogin(driver, loginButtonXpath, homePageUrl);
+	    LoginPage.enterEmail(driver, email, emailFieldXpath);
+	    LoginPage.enterPassword(driver, password, passwordFieldXpath);
+	    LoginPage.submitLogin(driver, loginButtonXpath, homePageUrl);
 	
-		//Creating Dynamic object for Entities Page
-		EntitiesPage ePage = new EntitiesPage();
+		//Commented out Creating Dynamic object for Entities Page due to making methods Static (no need for object)
+		//EntitiesPage ePage = new EntitiesPage();
 		driver.get(entitiesUrl);
-		ePage.clickAddEntity(driver, addEntityXpath, afterAddEntityUrl);
+		EntitiesPage.clickAddEntity(driver, addEntityXpath, afterAddEntityUrl);
 		
 		//driver.get(entitiesUrl);
-		//ePage.clickFirstEntity(driver, firstEntityXpath);
+		//EntitiesPage.clickFirstEntity(driver, firstEntityXpath);
 		
 		//Go to the url
 		driver.get(entitiesUrl);
 		//click the Edit Entity button
-		ePage.clickEditEntity(driver, editEntityXpath, editEntityUrl);
+		EntitiesPage.clickEditEntity(driver, editEntityXpath, editEntityUrl);
 		
 		//Go to the url
 		driver.get(entitiesUrl);
 		//Click the Assign Permissions button
-		ePage.clickAssPermissions(driver, assPermissionsXpath, assPermCloseXpath);
+		EntitiesPage.clickAssPermissions(driver, assPermissionsXpath, assPermCloseXpath);
 		
 		//driver.get(entitiesUrl);
-		//ePage.deleteEntity(driver, deleteEntityXpath, deleteCancelXpath);
+		//EntitiesPage.deleteEntity(driver, deleteEntityXpath, deleteCancelXpath);
 		
 		System.out.println("-----END OF TESTS-----");
 	}

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 public class EntitiesPage {
 	
 	//method for clicking the add entity button
-	public void clickAddEntity(WebDriver driver, String addEntityXpath, String afterAddEntityUrl) throws InterruptedException{
+	public static void clickAddEntity(WebDriver driver, String addEntityXpath, String afterAddEntityUrl) throws InterruptedException{
 		//sleep to let the page load
 		Thread.sleep(3000);                                                                               
 		WebElement addEntity = driver.findElement(By.xpath(addEntityXpath));
@@ -22,7 +22,7 @@ public class EntitiesPage {
 	}
 	
 	//method for clicking on the First Entity in the list
-	public void clickFirstEntity(WebDriver driver, String firstEntityXpath) throws InterruptedException {
+	public static void clickFirstEntity(WebDriver driver, String firstEntityXpath) throws InterruptedException {
 		//sleep to let the page load
 		Thread.sleep(3000);                                                                               
 		WebElement addEntity = driver.findElement(By.xpath(firstEntityXpath));
@@ -36,7 +36,7 @@ public class EntitiesPage {
 	}
 	
 	//click on the Assign Permissions button
-	public void clickAssPermissions(WebDriver driver, String assPermissionsXpath, String assPermCloseXpath) throws InterruptedException {
+	public static void clickAssPermissions(WebDriver driver, String assPermissionsXpath, String assPermCloseXpath) throws InterruptedException {
 		//sleep to let the page load
 		Thread.sleep(3000);                                                                               
 		WebElement assPermissions = driver.findElement(By.xpath(assPermissionsXpath));
@@ -56,7 +56,7 @@ public class EntitiesPage {
 	}
 	
 	//click on the Edit entity button for the first entity
-	public void clickEditEntity(WebDriver driver, String editEntityXpath, String editEntityUrl) throws InterruptedException {
+	public static void clickEditEntity(WebDriver driver, String editEntityXpath, String editEntityUrl) throws InterruptedException {
 		//sleep to let the page load
 		Thread.sleep(3000);                                                                               
 		WebElement editEntity = driver.findElement(By.xpath(editEntityXpath));
@@ -72,7 +72,7 @@ public class EntitiesPage {
 	}
 	
 	//click on the Delete entity button for the first entity
-	public void deleteEntity(WebDriver driver, String deleteEntityXpath, String deleteCancelXpath) throws InterruptedException {
+	public static void deleteEntity(WebDriver driver, String deleteEntityXpath, String deleteCancelXpath) throws InterruptedException {
 		//sleep to let the page load
 		Thread.sleep(3000);                                                                               
 		WebElement deleteEntity = driver.findElement(By.xpath(deleteEntityXpath));
