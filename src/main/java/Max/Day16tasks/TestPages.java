@@ -51,17 +51,20 @@ public class TestPages {
 	private static String createStartDate = "04202018";
 	private static String createEndDate = "04302018";
 	private static String containsText = "3163";
+	
+	//Add Report page variables
+	private static String addReportUrl = "http://fits.qauber.com/#/app/add-report-form";
 
 	//main method
 	public static void main(String[] args) throws InterruptedException {
-		System.out.print("-----BEGIN TEST SUITE-----");
+		System.out.println("\n-----BEGIN TEST SUITE-----\n");
 		//WebDriver initialization 
 		WebDriver driver = new FirefoxDriver();
 	    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	    driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 
 		//LOGIN PAGE
-		System.out.print("-----BEGIN LOGIN PAGE TESTS-----");	
+		System.out.println("\n-----BEGIN LOGIN PAGE TESTS-----\n");	
 		//Go to the url
 	    driver.get(url);
 	    //Activate the register() test case method in LoginPage
@@ -81,7 +84,7 @@ public class TestPages {
 	    LoginPage.submitLogin(driver, loginButtonXpath, homePageUrl);
 	
 	    //REPORTS PAGE
-		System.out.print("-----BEGIN REPORTS PAGE TESTS-----");	
+		System.out.println("\n-----BEGIN REPORTS PAGE TESTS-----\n");	
 		//driver.get(reportsUrl);
 		ReportsPage.enterSuspLastName(driver, suspLastName, suspLastNameXpath);
 		ReportsPage.enterSuspFirstName(driver, suspFirstName, suspFirstNameXpath);	
@@ -93,7 +96,7 @@ public class TestPages {
 		//ReportsPage.enterPubStartDate(driver, pubStartDate, pubStartXpath);
 		
 		//ENTITIES PAGE 
-		System.out.print("-----BEGIN ENTITIES PAGE TESTS-----");	
+		System.out.println("\n-----BEGIN ENTITIES PAGE TESTS-----\n");	
 		driver.get(entitiesUrl);
 		EntitiesPage.clickAddEntity(driver, addEntityXpath, afterAddEntityUrl);
 	
@@ -113,7 +116,12 @@ public class TestPages {
 		//driver.get(entitiesUrl);
 		//EntitiesPage.deleteEntity(driver, deleteEntityXpath, deleteCancelXpath);
 		
-		System.out.println("-----END OF TEST SUITE-----");
+		System.out.println("\n-----BEGIN ADD REPORT PAGE TESTS-----\n");
+		
+		driver.get(addReportUrl);
+		AddReport.selectRadioButton(driver);
+		
+		System.out.println("\n-----END OF TEST SUITE-----\n");
 	}
 
 }
