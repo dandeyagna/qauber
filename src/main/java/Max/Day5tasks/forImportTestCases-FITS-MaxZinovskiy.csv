@@ -1,0 +1,26 @@
+Test Summary,"Test Steps
+
+Expected Results",Labels,Components,Story ID,Issue Type,Affects Version
+Register with valid email address,"0. Prerequisite: (valid email that has not been registered before)
+1. Navigate to http://fits.qauber.com/#/page/register-sa
+2. On the register page, input a name, a valid email, and a password
+3. Click “Continue Registration” button
+
+Login Successful",Registration,Registration,BC-911,Test Case,
+Register with invalid email address,"1. Navigate to http://fits.qauber.com/#/page/register-sa
+2. On the register page, input a name, an invalid email, and a password
+3. Click “Continue Registration” button
+
+Login Unsuccessful",Registration,Registration,BC-912,Test Case,
+Log in with valid email and password,"0. Prerequisite: Valid email of account that was registered before
+1. Navigate to http://fits.qauber.com/#/page/login
+2. On the login page, input a valid email, and a valid password
+3. Click the “Login” button
+
+Login Successful",Login,User,BC-913,Test Case,
+Log in with valid email and incorrect password,"0. Prerequisite: Valid email of account that was registered before
+1. Navigate to http://fits.qauber.com/#/page/login
+2. On the login page, input a valid email, and an invalid password
+3. Click the “Login” button
+
+Login Unsuccessful",Login,User,BC-914,Test Case,
