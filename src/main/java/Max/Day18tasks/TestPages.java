@@ -3,6 +3,9 @@ package Max.Day18tasks;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -84,9 +87,12 @@ public class TestPages {
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("\n-----BEGIN TEST SUITE-----\n");
 		//WebDriver initialization 
+		//System.setProperty("webdriver.gecko.driver","/Users/max/Desktop/geckodriver");
 		WebDriver driver = new FirefoxDriver();
 	    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	    driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+	    driver.manage().window().setPosition(new Point(200,100));
+	    driver.manage().window().setSize(new Dimension(1600,1200));
 
 		//LOGIN PAGE
 		System.out.println("\n-----BEGIN LOGIN PAGE TESTS-----\n");	
@@ -116,7 +122,7 @@ public class TestPages {
 		ReportsPage.enterContainsText(driver, containsText, containsTextXpath);
 		ReportsPage.enterPubStartDate(driver, pubStartDate, pubStartXpath);
 		ReportsPage.togglePubCheckbox(driver, publishedCheckboxXpath);
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 		ReportsPage.clickClearFilter(driver, clearFiltersXpath, suspLastNameXpath, suspFirstNameXpath, caseIdXpath, suspTypeXpath, publishedCheckboxXpath, containsTextXpath);
 
 		
