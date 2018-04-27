@@ -1,4 +1,4 @@
-package Serega;
+package serega;
 
 public class Assignment1 {
 
