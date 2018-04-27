@@ -1,4 +1,4 @@
-package Calculator;
+package Max.Day10tasks;
 
 public class Calculator {
 	public int add(int a, int b) {

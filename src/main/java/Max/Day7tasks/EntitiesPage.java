@@ -1,3 +1,5 @@
+package Max.Day7tasks;
+
 //class for the Entities page
 public class EntitiesPage {
 	//attributes derived from each element on the page

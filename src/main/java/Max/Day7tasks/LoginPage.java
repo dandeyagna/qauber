@@ -1,3 +1,5 @@
+package Max.Day7tasks;
+
 //class for Login page
 public class LoginPage {
 	//attributes of login page derived from web elements of page

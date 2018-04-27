@@ -1,3 +1,5 @@
+package Max.Day11tasks;
+
 import java.util.HashMap;
 
 public class TestData {

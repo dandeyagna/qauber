@@ -1,3 +1,5 @@
+package Max.Day9tasks;
+
 
 public class CarInsurance extends InsurancePolicy {
 	

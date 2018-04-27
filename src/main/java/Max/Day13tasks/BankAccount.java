@@ -1,3 +1,5 @@
+package Max.Day13tasks;
+
 //BankAccount Interface
 public interface BankAccount {
 	

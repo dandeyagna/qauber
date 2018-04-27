@@ -1,3 +1,5 @@
+package Max.Day8tasks;
+
 
 public class CarInsurance {
 	private static String vinNumber;

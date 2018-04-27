@@ -1,3 +1,5 @@
+package Max.Day10tasks;
+
 public class InsurancePolicy {
 	//LifeInsurance attributes
 	protected String firstName;

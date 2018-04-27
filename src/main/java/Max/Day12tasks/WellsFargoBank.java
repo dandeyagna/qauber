@@ -1,3 +1,5 @@
+package Max.Day12tasks;
+
 //WellsFargoBank class (2 of 2)
 public class WellsFargoBank implements BankAccount  {
 	

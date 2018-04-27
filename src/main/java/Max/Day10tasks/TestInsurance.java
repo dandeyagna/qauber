@@ -1,3 +1,5 @@
+package Max.Day10tasks;
+
 public class TestInsurance {
 	//Health Insurance attributes
 	static String firstName = "Max";

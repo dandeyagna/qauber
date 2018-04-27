@@ -1,3 +1,5 @@
+package Max.Day13tasks;
+
 //ChaseBank class (1 of 2)
 public class ChaseBank implements BankAccount {
 	public String accountHolder;

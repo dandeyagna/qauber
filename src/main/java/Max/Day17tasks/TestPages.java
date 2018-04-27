@@ -1,3 +1,5 @@
+package Max.Day17tasks;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;

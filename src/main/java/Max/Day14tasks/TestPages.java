@@ -1,3 +1,5 @@
+package Max.Day14tasks;
+
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

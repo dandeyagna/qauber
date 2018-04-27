@@ -1,3 +1,5 @@
+package Max.Day16tasks;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
