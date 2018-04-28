@@ -131,6 +131,7 @@ public class TestLoginPage {
 				 */
 
 				e = driver.findElement(By.xpath("//input[@ng-model='wizard.report.sexCrimes']"));
+						//+ "/span[text()='Sex Crimes']"));
 				e.click();
 				
 				e = driver.findElement(By.xpath("//input[@ng-model='wizard.report.viceIntel']"));
