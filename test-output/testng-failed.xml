@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Max.Day21tasks.ReportsPage">
+        <methods>
+          <include name="enterCaseId"/>
+          <include name="enterContainsText"/>
+          <include name="enterSuspFirstName"/>
+          <include name="setUp"/>
+          <include name="enterPassword"/>
+          <include name="submitLogin"/>
+          <include name="enterEmail" invocation-numbers="0"/>
+          <include name="togglePubCheckbox"/>
+          <include name="clickClearFilter"/>
+          <include name="chooseSuspType"/>
+          <include name="enterPubStartDate"/>
+          <include name="enterSuspLastName"/>
+        </methods>
+      </class> <!-- Max.Day21tasks.ReportsPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
