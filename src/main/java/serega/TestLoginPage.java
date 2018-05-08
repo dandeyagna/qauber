@@ -104,8 +104,7 @@ public class TestLoginPage {
 
 		e = driver.findElement(By.name("city"));
 		e.sendKeys("Palo Alto");
-		
-		
+
 		e = driver.findElement(By.xpath("//input[@ng-model='wizard.report.dob']"));
 		e.clear();
 		e.sendKeys("12302001");
@@ -137,20 +136,17 @@ public class TestLoginPage {
 
 		Thread.sleep(5000);
 
-		/*
-		 * List<WebElement> gangUnitCheckBoxes =
-		 * driver.findElementsByXPath("//*[@class='col-md-2']//label"); for(WebElement
-		 * e2 : gangUnitCheckBoxes){ String x2 = e.getText(); if(x2.equals("Robbery") ||
-		 * x.equals("Narco")){ WebElement r2 = e.findElement(By.xpath("span"));
-		 * e.click();
-		 */
+		List<WebElement> gangUnitCheckBoxes = driver.findElementsByXPath("//*[@class='col-md-2']//label");
+		for (WebElement e2 : gangUnitCheckBoxes) {
+			String x2 = e2.getText();
+			if (x2.equals("Robbery") ||
 
-		e = driver.findElement(By.xpath("//input[@ng-model='wizard.report.sexCrimes']"));
-		// + "/span[text()='Sex Crimes']"));
-		e.click();
+					e.equals("Narco")) {
+				WebElement r2 = e.findElement(By.xpath("span"));
+				e.click();
+			}
+		}
 
-		e = driver.findElement(By.xpath("//input[@ng-model='wizard.report.viceIntel']"));
-		e.click();
 	}
 	// driver.findElement(By.xpath("//select[@ng-model='wizard.report.suspectType']/option"));
 	/*

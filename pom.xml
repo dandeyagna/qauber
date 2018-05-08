@@ -14,9 +14,9 @@
 
 	<properties>
 
-		<jre.level>1.7</jre.level>
+		<jre.level>1.8</jre.level>
 
-		<jdk.level>1.7</jdk.level>
+		<jdk.level>1.8</jdk.level>
 
 	</properties>
 
